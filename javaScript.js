@@ -14,6 +14,12 @@ function makeDivs(size){
 makeDivs(16)
 
 const theHoverDives= document.querySelectorAll(".square")
-theHoverDives.addEventListener("mouseover", () =>{
-    console.log("here")
-})
+theHoverDives.forEach(div => {
+    div.addEventListener("mouseover", () =>{
+        div.style.backgroundColor = "blue";
+    });
+    div.addEventListener("mouseout", ()=>{
+        div.style.backgroundColor = "azure";
+    });
+      
+});
