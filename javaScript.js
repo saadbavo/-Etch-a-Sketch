@@ -1,19 +1,14 @@
 
-function makeDivs(){
+function makeDivs(size){
    
-    for(let i=0; i<16; i++ ){
-        const container = document.querySelector(".container");
-        const contentRows = document.createElement("div");
-        contentRows.classList.add("rows");
-        container.appendChild(content)
-
-    }
-    for(let i=0; i<16; i++ ){
+    for(let j=0; j<size * size; j++ ){
         const container = document.querySelector(".container");
         const contentColms = document.createElement("div");
-        contentColms.classList.add("colms");
-        container.appendChild(content)
+        contentColms.classList.add("square");
+        container.appendChild(contentColms)
 
     }
 
+
 }
+makeDivs(16)
