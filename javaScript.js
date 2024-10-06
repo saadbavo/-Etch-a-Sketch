@@ -23,3 +23,20 @@ theHoverDives.forEach(div => {
     });
       
 });
+function setNumber(){
+    let sizes = prompt("please enter number:");
+    sizes = Number(sizes);
+    if(sizes>0 && sizes <100) {
+        const container =document.querySelector(".container");
+        while(container.firstChild){
+            container.removeChild(container.firstChild)
+
+        };
+        makeDivs(sizes);
+    }
+    else{
+        alert ("Number must be between 1 and 100")
+    }
+}
+const btn = document.getElementById("btn");
+btn.addEventListener("click", setNumber)
