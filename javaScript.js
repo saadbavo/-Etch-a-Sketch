@@ -12,3 +12,8 @@ function makeDivs(size){
 
 }
 makeDivs(16)
+
+const theHoverDives= document.querySelectorAll(".square")
+theHoverDives.addEventListener("mouseover", () =>{
+    console.log("here")
+})
